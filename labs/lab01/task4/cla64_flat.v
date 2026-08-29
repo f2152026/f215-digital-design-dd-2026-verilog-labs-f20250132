@@ -12,7 +12,6 @@ module cla64_flat(
   output        cout
 );
 
-
   wire [63:0] p, g;
   wire [64:1] c;   // c[1]..c[64] are the 64 carries; think of cin as c[0]
 
