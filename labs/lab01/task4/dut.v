@@ -5,6 +5,7 @@
 // lets you compare rca64.v, cla64_flat.v, and cla64_blocked.v using the
 // exact same testbench and stimulus each time.
 
+// dut.v
 module dut(
   input  [63:0] a,
   input  [63:0] b,
@@ -21,5 +22,6 @@ module dut(
 
   // ---- Option 3: blocked 64-bit carry-lookahead adder ----
   // cla64_blocked U_IMPL (.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
+
 
 endmodule
