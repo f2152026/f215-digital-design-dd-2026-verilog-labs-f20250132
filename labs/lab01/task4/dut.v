@@ -5,6 +5,7 @@
 // lets you compare rca64.v, cla64_flat.v, and cla64_blocked.v using the
 // exact same testbench and stimulus each time.
 
+// dut.v
 module dut(
   input  [63:0] a,
   input  [63:0] b,
@@ -12,6 +13,7 @@ module dut(
   output [63:0] sum,
   output        cout
 );
+
 
   // ---- Option 1: 64-bit ripple-carry adder ----
   rca64 U_IMPL (.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
